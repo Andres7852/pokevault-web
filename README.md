@@ -170,6 +170,9 @@ Para verificar empíricamente que las solicitudes protegidas viajan con el token
    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    ```
 
+### Evidencia:
+![Evidencia de Red (Network Tab)](image.png)
+
 ---
 
 ## 🤖 Uso de Inteligencia Artificial
