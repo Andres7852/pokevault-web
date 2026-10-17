@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { ProductoService } from '../../../features/productos/services/producto.service';
 import { Producto } from '../../../features/productos/domain/producto.types';
 import { useAuth } from '../../../features/auth/hooks/useAuth';
 import { PedidoForm } from '../../../features/pedidos/components/PedidoForm';
 
-export default function ProductoDetailPage() {
+function ProductoDetailContent() {
   const { id } = useParams();
   const router = useRouter();
   const { user } = useAuth();
@@ -97,5 +97,13 @@ export default function ProductoDetailPage() {
         />
       )}
     </div>
+  );
+}
+
+export default function ProductoDetailPage() {
+  return (
+    <Suspense fallback={<div className="text-center py-20 text-white">Cargando detalles del producto...</div>}>
+      <ProductoDetailContent />
+    </Suspense>
   );
 }
