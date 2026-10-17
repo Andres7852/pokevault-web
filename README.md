@@ -18,7 +18,7 @@ Aplicación web profesional para **PokéVault** (Tienda de Coleccionables y Cart
 | Servicio         | Plataforma     | URL                                                                                |
 | :--------------- | :------------- | :--------------------------------------------------------------------------------- |
 | **API Backend**  | Render         | [https://pokevault-api-zo59.onrender.com](https://pokevault-api-zo59.onrender.com) |
-| **Frontend Web** | Vercel / Local | `http://localhost:3000` (Desplegable en Vercel)                                    |
+| **Frontend Web** | Vercel / Local | [https://pokevault-api-zo59.onrender.com](https://pokevault-web-bice.vercel.app/)  |
 
 ---
 
